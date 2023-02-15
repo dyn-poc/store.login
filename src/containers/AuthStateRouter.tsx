@@ -1,14 +1,14 @@
 import React, {lazy} from 'react'
 import { useActor } from "@xstate/react"
 import  { useServices } from '../ioc/context';
-import Paper from '../components/styled/Paper';
+import Paper from '../theme/styled/Paper';
 // import SignIn from '../components/SignIn';
 // import Profile from '../components/Profile';
 
 
 
-const SignIn = lazy(() => import('../components/SignIn'));
-const Profile = lazy(() => import('./ProfileContainer'));
+const SignIn = lazy(() => import('../pages/login'));
+const Profile = lazy(() => import('../pages/profile'));
  const Loading = lazy(() => import('@mui/lab/LoadingButton'));
  const Error = lazy(() => import('../components/JsonTreeViewer'));
 

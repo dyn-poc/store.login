@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
-import {AuthService} from "../machines/authMachine";
+import {AuthService} from "../../machines/authMachine";
 import {AnyState} from "xstate";
 import {Box, Paper, Typography, Divider} from "@mui/material";
-import SessionInfo from "../components/Session";
-import Profile from "../components/Profile";
-import { useActor } from "@xstate/react";
+import SessionInfo from "./components/Session";
+import Profile from "./components/Profile";
  
 
 const stackItem={

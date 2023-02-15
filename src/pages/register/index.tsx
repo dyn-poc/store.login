@@ -10,17 +10,17 @@ import Container from "@mui/material/Container";
 import { useForm } from "react-hook-form";
 import { useMachine, useSelector } from "@xstate/react";
 import { AppRegistrationOutlined, CodeOutlined } from "@mui/icons-material";
-import { useAppLogger } from "../logger";
-import { loginMachine } from "../machines/loginMachine";
-import Paper from "./styled/Paper";
-import Avatar from "./styled/Avatar";
-import Form from "./styled/Form";
+import { useAppLogger } from "../../logger/component";
+import { loginMachine } from "../../machines/loginMachine";
+import Paper from "../../theme/styled/Paper";
+import Avatar from "../../theme/styled/Avatar";
+import Form from "../../theme/styled/Form";
 import { ButtonGroup } from "@mui/material";
-import PopperToggle from "./styled/PoperText";
+import PopperToggle from "../../theme/styled/PoperText";
  
 import { Link } from "react-router-dom";
-import { gigyaLoginApiServices } from "../gigya/services";
-import { ServicesProps } from "../ioc/services";
+import { gigyaLoginApiServices } from "../../gigya/services";
+import { ServicesProps } from "../../ioc/services";
 
 export interface SignUpProps extends ServicesProps {
 }

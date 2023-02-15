@@ -2,22 +2,25 @@ import React, {StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './index.css';
- import { BrowserRouter } from "react-router-dom";
-import {
-    BrowserRouter as Router,
-    useRoutes,
-} from 'react-router-dom'
-
-import routes from '~react-pages'
+ import { RouterProvider } from "react-router-dom";
+// import {
+//     BrowserRouter as Router,
+//     useRoutes,
+// } from 'react-router-dom'
+// 
+// import routes from '~react-pages'
+import router from './router';
 // import reportWebVitals from './reportWebVitals';
-
+ 
 // eslint-disable-next-line no-console
-console.log(routes)
+// console.log(routes)
 
 function Main() {
     return (
         <Suspense fallback={<p>Loading...</p>}>
-            {useRoutes(routes)}
+            {/* {useRoutes(router.routes)} */}
+            <RouterProvider router={router} />
+
         </Suspense>
     )
 }
@@ -26,9 +29,9 @@ const app = createRoot(document.getElementById('root')!)
 
 app.render(
     <StrictMode>
-        <Router>
+        {/* <Router> */}
           <Main />
-        </Router>
+        {/* </Router> */}
     </StrictMode>
 )
 

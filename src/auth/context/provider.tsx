@@ -5,7 +5,7 @@ import {useInterpret} from "@xstate/react";
 import { gigyaAuthApiServices } from "../../gigya/services";
 import {AuthContext } from './context'
 import { useLogger } from "../../logger/context/context";
-import { useAppLogger } from "../../logger";
+import { useAppLogger } from "../../logger/component";
 
  export function AuthProvider({ children}:React.PropsWithChildren) {
     const authService = useInterpret(() =>authMachine.withConfig({

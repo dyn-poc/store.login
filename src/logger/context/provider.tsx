@@ -1,7 +1,7 @@
 import React, { createContext, useContext} from "react";
 import {useInterpret} from "@xstate/react";
  import   { LoggerContext, LoggerContextType } from './context'
-import { notificationMachine, NotificationsService } from "../../machines/notificationsMachine";
+import { notificationMachine, NotificationsService } from "../machine";
 
 export function LoggerProvider({ children}:React.PropsWithChildren) {
     const loggerService = useInterpret(()=>notificationMachine);

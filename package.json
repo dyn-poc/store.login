@@ -20,17 +20,17 @@
     "react-router-dom": "6",
     "rxjs": "^7.5.7",
     "typia": "^3.4.7",
+    "vite-plugin-react-pages": "^3.3.1",
     "xstate": "latest"
   },
   "scripts": {
     "dev": "vite",
     "preview": "vite preview --port 8080",
-
     "build": "tsc && vite build",
     "serve": "vite preview",
     "predeploy": "npm run build -o dist",
     "deploy": "gh-pages -d dist",
-    "postinstall__": "xstate typegen \"./src/**/*.ts?(x)\"",
+    "postinstall": "xstate typegen \"./src/**/*.ts?(x)\" --watch",
     "typegen": "xstate typegen \"src/**/*.ts?(x)\" --watch"
   },
   "eslintConfig": {

@@ -2,9 +2,9 @@ import React, {useEffect} from "react";
 import { Paper, Typography , styled,PaperProps} from "@mui/material";
 import {NotificationUpdatePayload} from "../models";
 import {AuthService} from "../machines/authMachine";
-import {NotificationsService} from "../machines/notificationsMachine";
+import {NotificationsService} from "../logger/machine";
 import {useActor} from "@xstate/react";
-import {useAppLogger, NotificationsList} from "../logger";
+import { NotificationsList} from "../logger/component";
  
 export const StyledPaper = styled(Paper)<PaperProps>(
     ({ theme }) =>({

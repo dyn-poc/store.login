@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {ErrorBoundary} from '../components/ErrorBoundary'
+import {ErrorBoundary} from '../../components/ErrorBoundary'
 import {
      MonetizationOnOutlined as MonetizationOnIcon,
  
@@ -21,8 +21,8 @@ import {
 } from "@mui/material";
 
  
-import JsonView from "../components/JsonTreeViewer";
-import {NotificationResponseItem} from "../machines/notificationsMachine";
+import JsonView from "../../components/JsonTreeViewer";
+import {NotificationResponseItem} from "../machine";
 
 export type NotificationListItemProps = {
     notification: NotificationResponseItem;

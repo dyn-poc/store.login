@@ -1,7 +1,7 @@
 import {   SmartToyOutlined} from "@mui/icons-material";
 import { useActor } from "@xstate/react";
 import { AnyInterpreter, AnyState } from "xstate";
-import InputIcon from "./styled/InputIcon";
+import InputIcon from "../theme/styled/InputIcon";
 function getState(state: AnyState) {
   return state.toStrings().reverse()[0];
   /*  let current= state;

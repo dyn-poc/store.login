@@ -1,10 +1,10 @@
 import React from "react";
-import {AuthService} from "../machines/authMachine";
+import {AuthService} from "../../../machines/authMachine";
 import { useSelector} from "@xstate/react";
 import {AnyState} from "xstate";
-import JsonView from "./JsonTreeViewer";
+import JsonView from "../../../components/JsonTreeViewer";
 import { Divider, Grid, Stack, TextareaAutosize, Typography} from "@mui/material";
-import Paper from "./styled/Paper";
+import Paper from "../../../theme/styled/Paper";
 
 
 export interface SessionProps {

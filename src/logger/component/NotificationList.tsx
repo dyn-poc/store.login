@@ -2,9 +2,8 @@ import React from "react";
 import {Collapse, Icon, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ListSubheader} from "@mui/material";
 
 import NotificationListItem from "./NotificationListItem";
-import {NotificationResponseItem} from "../machines/notificationsMachine";
-import {ExpandLess, ExpandMore, StarBorder} from "@mui/icons-material";
-import {AnyRecord} from "../models";
+import {NotificationResponseItem} from "../machine";
+import {AnyRecord} from "../../models";
 
 export interface NotificationsListProps {
     notifications: NotificationResponseItem[];

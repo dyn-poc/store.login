@@ -1,11 +1,9 @@
 import React from "react";
-import {AuthService} from "../machines/authMachine";
+import {AuthService} from "../../../machines/authMachine";
 import { useSelector} from "@xstate/react";
 import {AnyState} from "xstate";
-import {Box, styled, Typography} from "@mui/material";
-import Paper from "./styled/Paper";
-import Avatar from "./styled/Avatar";
-import Form from "./styled/Form";
+import {Box,  Typography} from "@mui/material";
+import { Form , Paper, Avatar} from "../../../theme/styled";
 
   
 export interface ProfileProps {

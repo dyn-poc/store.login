@@ -19,15 +19,15 @@ import {
   MenuItem,
   Select,
 } from "@mui/material";
-import { LoginMachine, loginMachine, LoginSuccessPayload } from "../machines/loginMachine";
-import { gigyaLoginApiServices } from "../gigya/services";
-import { useAppLogger } from "../logger";
-import type { ServicesProps } from "../ioc/services";
-import PopperToggle from "./styled/PoperText";
+import { LoginMachine, loginMachine, LoginSuccessPayload } from "../../machines/loginMachine";
+import { gigyaLoginApiServices } from "../../gigya/services";
+import { useAppLogger } from "../../logger/component";
+import type { ServicesProps } from "../../ioc/services";
+import PopperToggle from "../../theme/styled/PoperText";
 
-import Paper from "./styled/Paper";
-import Avatar from "./styled/Avatar";
-import Form from "./styled/Form";
+import Paper from "../../theme/styled/Paper";
+import Avatar from "../../theme/styled/Avatar";
+import Form from "../../theme/styled/Form";
 import {StateFrom} from "xstate";
 
 const loadingSelector=(state:StateFrom<LoginMachine> )=>state.matches("loading");

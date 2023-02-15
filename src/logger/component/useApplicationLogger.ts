@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import {ActionTypes, AnyInterpreter, AnyEventObject, AnyState } from "xstate";
-import {NotificationResponseItem, NotificationsEvents} from "../machines/notificationsMachine";
+import {NotificationResponseItem, NotificationsEvents} from "../machine";
 import { omit } from "lodash/fp";
-import {AnyRecord} from "../models";
+import {AnyRecord} from "../../models";
 declare type  AppService= AnyInterpreter | undefined;
 export function isUpdateType(state: AnyState) {
     return state.event?.type &&

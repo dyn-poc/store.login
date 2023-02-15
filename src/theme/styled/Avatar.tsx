@@ -6,6 +6,7 @@ export const StyledAvatar= styled(Avatar)<AvatarProps>(
         backgroundColor: theme.palette.secondary.main,
         width: theme.spacing(20),
         height: theme.spacing(20),
+        size: theme.breakpoints.values.sm
     }),
   );
 

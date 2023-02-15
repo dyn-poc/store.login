@@ -13,15 +13,7 @@ import {  gigya_loader_service, loader, loginSubject } from "../loader/gigyaLoad
  import { LoginMachine, LoginMachineContext, LoginMachineEvents, LoginMachineService, LoginServiceMap, LoginSuccessPayload, PasswordLoginPayload, SignupPayload } from "../../machines/loginMachine";
 import { Account, ILoginEvent } from "../models";
  
-// const myFunc = async (actor: AnyInterpreter) => {
-
-//     const doneState = await waitFor(actor, (state) => state.matches('done'), {
-//         // 20 seconds in ms
-//         timeout: 20_000
-//     });
-// };
-
-
+ 
 
 export const gigyaLoginApiServices: LoginServiceMap  = {
     loader: (context) => gigya_loader_service(),
